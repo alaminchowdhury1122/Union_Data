@@ -396,7 +396,7 @@ YEARS.forEach(y=>{if(!db.years[y])db.years[y]={pay:{},spend:[],don:{}}});
 let sel=YEARS.includes(new Date().getFullYear())?new Date().getFullYear():2026;
 let selM=new Date().getMonth();
 let editing=!REQUIRE_LOGIN,fresh=-1;
-const SYNC_URL='PASTE_YOUR_WEB_APP_URL_HERE';
+const SYNC_URL='https://script.google.com/macros/s/AKfycbzMHn3SWUvfab06Lk_nvAtULVmJw0gU18ZcpdQLFfUQ3kzx1maHM40aoLUZxCH1AwI/exec';
 let syncTimer=null,pw='',role='';
 function cloudPush(){
   if(!SYNC_URL||SYNC_URL.startsWith('PASTE')||!pw||!role)return;
